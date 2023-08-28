@@ -1,0 +1,180 @@
+header{
+    background-color: gray;
+  }
+  
+  hgroup h1,h2{
+    color: red;
+  }
+  
+  header div{
+    display: flex;
+    flex-direction: row;
+    padding-left: 150px;
+  } 
+  
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 150px;
+  }
+  .content #about,
+  .content #competencies,
+  .content #experiences,
+  .content #education,.content #hobbies{
+    width: 50%;
+  }
+
+  /* #contact{
+    position: absolute;
+  } */
+  #about h3,#competencies h3,#experiences h3,#education h3,#hobbies h3{
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+  }
+
+  h3::before{
+    content: "🔴 ";
+  }
+
+  .skills-primary .skill:first-child{
+    width: 50%;
+    background-color: red;
+  }
+  .skills-primary .skill:nth-child(2){
+    width: 30%;
+    background-color: red;
+  }
+  .skills-primary .skill:nth-child(3){
+    width: 20%;
+    background-color: red;
+  }
+
+  .skills-primary::before{
+    content: "Main";
+  }
+  
+  .skills-primary{
+    margin-bottom: 10px;
+  }
+
+  .skills-secondary::before{
+    content: "Other";
+  }
+
+
+  /********** start data skill *******/
+
+  .skills-secondary .skill:first-child{
+    width: 100%;
+    background-color: red;
+  }
+  .skills-secondary .skill:nth-child(2){
+    width: 30%;
+    background-color: red;
+  }
+  .skills-secondary .skill:nth-child(3){
+    width: 70%;
+    background-color: red;
+  }
+
+  .skills .skill span{
+    color: white;
+  }
+
+  .skills-primary .skill,.skills-secondary .skill{
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /******** end data skill    *******/
+
+  .experience h4 span,.education h4 span{
+    color: red;
+  }
+
+  .experience-institution::before{
+    content: "@";
+  }
+
+  .experience-location,.experience-date{
+    color: grey;
+  }
+
+  .experience-details{
+    margin-top: -18px;
+    margin-left: 10px;
+  }
+
+  dl{
+    display: flex;
+    flex-direction: row;
+  } 
+
+
+  dl dt{
+    width: 120px;
+    background-color: red;
+    color: white;
+  }
+
+  dl dd a, dl dd{
+    color: red;
+    background-color: black;
+    width: 400px;
+  }
+
+  /* #contact{
+    position: absolute;
+    margin-top:-220px;
+    margin-left: 800px;
+  } */
+  /* #contact{
+    position: absolute;
+    top: 10px;
+    right: 613px;
+    width: 348px;
+}
+#contact h3{
+    display: none;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+  }
+
+  .contact-type {
+    color: white;
+    background-color: red;
+    flex: 1;
+    text-align: left; 
+    margin-right: -3px;
+  }
+
+  .contact-value {
+    width: 100%;
+    background-color:black ;
+    color: red;
+    flex: 2;
+    margin-right: -73px;
+  } */
+
+  @media screen and (max-width: 700px){
+    .content #about,
+  .content #competencies,
+  .content #experiences,
+  .content #education,.content #hobbies{
+    width: 100%;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  header div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  }
