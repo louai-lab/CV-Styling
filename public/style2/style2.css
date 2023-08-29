@@ -138,6 +138,7 @@ hgroup h2{
     grid-template-areas: 
     'x y'
     'z z';
+    row-gap: 20px;
 }
 .experience h4{
     grid-area: x;
@@ -180,4 +181,30 @@ hgroup h2{
 .experience-institution{
     display: none;
 }
+
+
+#hobbies{
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+#hobbies h3{
+    border-right: 2px solid black;
+    margin-right: 8px;
+    text-align: center;   
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    background-image: url(../images/email.png);
+}
+
+
 
