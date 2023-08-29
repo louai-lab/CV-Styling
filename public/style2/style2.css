@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    width: 80%;
+    margin: auto auto;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    position: relative;
+}
+img{
+    position: absolute;
+    transform: rotate(-20deg);
+}
+
+hgroup h2{
+    display: none;
+}
+
+#about{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+#about h3{
+    display: none;
+}
+#about p{
+    color: grey;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#competencies{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 
+    'a b'
+    'a c';
+    row-gap: 25px;
+}
+
+#competencies h3{
+    grid-area: a;
+    border-right: 2px solid black;
+    margin-right: 8px;
+    text-align: center;
+}
+#competencies:nth-child(2){
+    grid-area: b;
+    
+}
+#competencies:last-child{
+    grid-area: c;
+    
+}
+
+.skills-primary , .skills-secondary{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+[data-skill="1"]::after{
+    content: '✭';
+}
+
+[data-skill="3"]::after{
+    content: '✭✭';
+}
+
+[data-skill="5"]::after{
+    content: '✭✭✭';
+}
+
+[data-skill="9"]::after{
+    content: '✭✭✭✭✭';
+}
+
+[data-skill="7"]::after{
+    content: '✭✭✭✭';
+}
+
+.skill{
+    width: 180px;
+    background-color:rgb(7, 143, 153);
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content:  space-between;
+}
+.skills-secondary{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+#experiences{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 
+    'four five'
+    'four six';
+    row-gap: 25px;
+}
+
+#experiences h3{
+    grid-area: four;
+    border-right: 2px solid black;
+    margin-right: 8px;
+    text-align: center;
+}
+#experiences:nth-child(2){
+    grid-area: five;
+}
+#experiences:last-child{
+    grid-area: six;
+}
+
+.experience{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    'x y'
+    'z z';
+}
+.experience h4{
+    grid-area: x;
+}
+.experience .experience-details{
+    grid-area: y;
+    justify-self: end;
+    color: gray;
+}
+.experience .experience-description{
+    grid-area: z;
+}
+.experience-type{
+    color: rgb(21, 218, 208);
+}
+
+
+#education{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 
+    'eleven twelve'
+    'eleven thirteen';
+    row-gap: 25px;
+}
+#education h3{
+    grid-area: eleven;
+    border-right: 2px solid black;
+    margin-right: 8px;
+    text-align: center;
+
+}
+#education:nth-child(2){
+    grid-area: twelve;
+}
+#education:nth-child(3){
+    grid-area: thirteen;
+}
+
+.experience-institution{
+    display: none;
+}
+
