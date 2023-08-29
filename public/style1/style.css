@@ -11,6 +11,10 @@ header{
     flex-direction: row;
     padding-left: 150px;
   } 
+
+  img{
+    width: 180px;
+  }
   
   .content{
     display: flex;
