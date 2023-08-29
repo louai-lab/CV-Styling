@@ -36,7 +36,7 @@ header{
     content: "🔴 ";
   }
 
-  .skills-primary .skill:first-child{
+  /* .skills-primary .skill:first-child{
     width: 50%;
     background-color: red;
   }
@@ -47,7 +47,38 @@ header{
   .skills-primary .skill:nth-child(3){
     width: 20%;
     background-color: red;
+  } */
+
+  [data-skill="5"] span{
+    width: 50%;
   }
+  [data-skill="3"] span{
+    width: 30%;
+  }
+  [data-skill="1"] span{
+    width: 10%;
+  }
+  [data-skill="9"] span{
+    width: 90%;
+  }
+  [data-skill="5"] span{
+    width: 50%;
+  }
+  [data-skill="7"] span{
+    width: 70%;
+  }
+
+ .skill {
+    width: 100%;
+    background-color: rgb(185, 178, 178);
+    /* display: block; */
+}
+ .skill span{
+    color: white;
+    display: block;
+    background-color: red;
+    padding: 10px;
+}
 
   .skills-primary::before{
     content: "Main";
@@ -64,7 +95,7 @@ header{
 
   /********** start data skill *******/
 
-  .skills-secondary .skill:first-child{
+  /* .skills-secondary .skill:first-child{
     width: 100%;
     background-color: red;
   }
@@ -75,7 +106,7 @@ header{
   .skills-secondary .skill:nth-child(3){
     width: 70%;
     background-color: red;
-  }
+  } */
 
   .skills .skill span{
     color: white;
@@ -108,6 +139,7 @@ header{
   dl{
     display: flex;
     flex-direction: row;
+    margin: 0;
   } 
 
 
@@ -121,43 +153,8 @@ header{
     color: red;
     background-color: black;
     width: 400px;
+    margin: 0;
   }
-
-  /* #contact{
-    position: absolute;
-    margin-top:-220px;
-    margin-left: 800px;
-  } */
-  /* #contact{
-    position: absolute;
-    top: 10px;
-    right: 613px;
-    width: 348px;
-}
-#contact h3{
-    display: none;
-}
-.contact {
-    display: flex;
-    align-items: center;
-    width: 1000px;
-  }
-
-  .contact-type {
-    color: white;
-    background-color: red;
-    flex: 1;
-    text-align: left; 
-    margin-right: -3px;
-  }
-
-  .contact-value {
-    width: 100%;
-    background-color:black ;
-    color: red;
-    flex: 2;
-    margin-right: -73px;
-  } */
 
   @media screen and (max-width: 700px){
     .content #about,
