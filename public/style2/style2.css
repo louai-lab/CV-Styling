@@ -55,7 +55,6 @@ hgroup h2{
     grid-area: a;
     border-right: 2px solid black;
     margin-right: 8px;
-    text-align: center;
 }
 #competencies:nth-child(2){
     grid-area: b;
@@ -123,7 +122,7 @@ hgroup h2{
     grid-area: four;
     border-right: 2px solid black;
     margin-right: 8px;
-    text-align: center;
+    
 }
 #experiences:nth-child(2){
     grid-area: five;
@@ -168,7 +167,6 @@ hgroup h2{
     grid-area: eleven;
     border-right: 2px solid black;
     margin-right: 8px;
-    text-align: center;
 
 }
 #education:nth-child(2){
@@ -190,8 +188,7 @@ hgroup h2{
 
 #hobbies h3{
     border-right: 2px solid black;
-    margin-right: 8px;
-    text-align: center;   
+    margin-right: 8px;  
 }
 
 #contact{
@@ -204,6 +201,49 @@ hgroup h2{
     flex-direction: row;
     column-gap: 20px;
     background-image: url(../images/email.png);
+}
+
+
+
+@media screen and (max-width: 501px){
+    img{
+        display: none;
+    }
+    #competencies{
+        grid-template-columns: auto;
+        grid-template-areas: 
+    'a'
+    'b'
+    'c';
+    }
+    .skill{
+        width:120px;
+    }
+    #competencies h3 , #experiences h3 ,#education h3,#hobbies h3{
+        border-right: none;
+        text-decoration: underline;
+    }
+    #experiences{
+        grid-template-columns: auto;
+        grid-template-areas: 
+    'four'
+    'five'
+    'six';   
+    }
+
+    #education{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'eleven'
+        'twelve'
+        'thirteen';
+    }
+
+    #hobbies{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 15px;
+    }
 }
 
 
