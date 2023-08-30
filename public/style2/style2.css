@@ -191,7 +191,7 @@ hgroup h2{
     margin-right: 8px;  
 }
 
-#contact{
+/* #contact{
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -201,6 +201,50 @@ hgroup h2{
     flex-direction: row;
     column-gap: 20px;
     background-image: url(../images/email.png);
+} */
+
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 100px;
+}
+
+#contact h3{
+    display: none;
+}
+
+#contact a{
+    color: rgba(0, 0, 0, 0);
+}
+
+.contact-email{
+    background: url("../images/email.png");
+}
+
+.contact-phone{
+    background: url("../images/phone.png");
+}
+
+.contact-github{
+    background: url("../images/github.png");
+}
+
+.contact-facebook{
+    background: url("../images/facebook.png");
+}
+
+.contact-skype{
+    display: none;
+}
+
+.contact{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    color: rgba(0, 0, 0, 0);
 }
 
 
