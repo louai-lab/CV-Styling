@@ -20,6 +20,11 @@ img{
     transform: rotate(-20deg);
 }
 
+header figure img{
+    max-width: 110px;
+    max-height: 110px;
+}
+
 hgroup h2{
     display: none;
 }
